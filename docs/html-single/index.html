@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      (function(){
+  const {protocol:proto, host:hostName, pathname:path, search:srch, hash:hsh} = window.location;
+  if (!(path.endsWith("/") || path.endsWith(".html"))) {
+    window.location.replace(`${proto}//${hostName}${path}/${srch}${hsh}`);
+  }
+})()</script>
+    <base href="./"><meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Basic</title><link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="verso-vars.css">
+    <script>
+      const __versoSiteRoot = document.baseURI;</script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js" integrity="sha384-zbcZAIxlvJtNE3Dp5nxLXdXtXyxwOdnILY1TDPVmKFhl4r4nSUG1r8bcFXGVa4Te" crossorigin="anonymous"></script>
+    <script src="-verso-search/elasticlunr.min.js"></script>
+    <script src="-verso-search/fuzzysort.js"></script>
+    <script src="-verso-search/searchIndex.js"></script>
+    <script type="module" src="-verso-search/search-init.js"></script>
+    <link rel="stylesheet" href="-verso-search/search-box.css">
+    <link rel="stylesheet" href="-verso-search/search-highlight.css">
+    <link rel="stylesheet" href="-verso-search/domain-display.css">
+    <script src="-verso-search/search-highlight.js" defer="defer"></script>
+    </head>
+  <body>
+    <header>
+      <div class="header-logo-wrapper"></div>
+      <div class="header-title-wrapper">
+        <a href="" class="header-title"><h1>
+            Basic</h1>
+          </a></div>
+      </header>
+    <label for="toggle-toc" id="toggle-toc-click"><span class="line line1"></span><span class="line line2"></span><span class="line line3"></span></label><div class="with-toc">
+      <div class="toc-backdrop" onclick="document.getElementById('toggle-toc-click')?.click()"></div>
+      <nav id="toc">
+        <input type="checkbox" id="toggle-toc"><div class="first">
+          <a href="" class="toc-title"><h1>
+              Basic</h1>
+            </a><div class="split-tocs">
+            <div class="split-toc book">
+              <div class="title">
+                <label for="--verso-manual-toc-----bookRoot" class="toggle-split-toc"><input type="checkbox" class="toggle-split-toc" id="--verso-manual-toc-----bookRoot" checked="checked"></label><span class="">Table of Contents</span></div>
+              <table><tr class="numbered"><td class="num"></td><td><a href="#Basic--Sample-Markup">Sample Markup</a></td></tr></table></div>
+            </div>
+          </div>
+        <div class="last"></div>
+        </nav>
+      <main><div class="content-wrapper">
+          <section>
+            <div class="titlepage">
+              <h1>
+                Basic</h1>
+              <div class="authors"></div>
+              </div>
+            <section>
+              <h2>
+                Table of Contents</h2>
+              <ol class="section-toc">
+                <li>
+                  <a href=""><span class="number">1.</span> Sample Markup</a></li>
+                </ol>
+              </section>
+            <section>
+              <h2 id="Basic--Sample-Markup">
+                1. Sample Markup</h2>
+              <p>
+                In this section, <a href="https://github.com/leanprover/verso">verso</a>-markup is tested.
+The examples are based on the <a href="https://github.com/leanprover/verso/releases/download/latest/manual.pdf">verso manual</a>.</p>
+              <section>
+                <h3 id="Basic--Sample-Markup--Math">
+                  1.1. Math</h3>
+                <p>
+                  This is an example of <em>inline math</em>: <code class="math inline">e^{\pi i} + 1 = 0</code> and this is <em>display math</em>
+<code class="math display">
+  \Sum_{n=0}^\infty \frac{x^n}{n!} = e^x.
+</code></p>
+                <p>
+                  For this section, the created HTML-code is</p>
+                <pre>1.1. Math&lt;/h3&gt;
+  &lt;p&gt;
+    This is an example of &lt;em&gt;inline math&lt;/em&gt;: &lt;code class="math inline"&gt;e^{\pi i} + 1 = 0&lt;/code&gt;
+    and this is &lt;em&gt;display math&lt;/em&gt;&lt;/p&gt;
+  &lt;p&gt;
+  &lt;code class="math display"&gt;\Sum_{n=0}^\infty \frac{x^n}{n!} = e^x. &lt;/code&gt;
+&lt;/p&gt;
+</pre><p>
+                  The formulae are rendered as code and not as <em>math</em>.
+</p>
+                </section>
+              </section>
+            </section>
+          </div>
+        </main></div>
+    </body>
+  </html>
+

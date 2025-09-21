@@ -1,0 +1,1 @@
+window.docContents[141].resolve({"/#Basic--Sample-Markup":{"contents":"In this section, verso-markup is tested.\nThe examples are based on the verso manual.\n\n\n\n","context":"Basic","header":"1. Sample Markup","id":"/#Basic--Sample-Markup"}});

@@ -1,0 +1,15 @@
+name = "verso-test"
+version = "0.1.0"
+defaultTargets = ["verso-test"]
+
+[[require]]
+name = "verso"
+git = "https://github.com/leanprover/verso"
+rev = "v4.24.0-rc1"
+
+[[lean_lib]]
+name = "VersoTest"
+
+[[lean_exe]]
+name = "verso-test"
+root = "Main"

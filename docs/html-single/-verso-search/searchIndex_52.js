@@ -1,0 +1,1 @@
+window.docContents[52].resolve({"/#Basic":{"contents":"\n\n","context":"","header":"Basic","id":"/#Basic"}});
