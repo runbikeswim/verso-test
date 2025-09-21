@@ -13,19 +13,19 @@ The examples are based on the [verso manual](https://github.com/leanprover/verso
 
 ## Math
 
-This is an example of _inline math_: $`e^{\pi i} + 1 = 0` and this is _display math_
+This is an example of _inline math_: $`e^{\pi\cdot i} + 1 = 0` and this is _display math_
 $$`
-  \Sum_{n=0}^\infty \frac{x^n}{n!} = e^x.
+  \sum_{n=0}^\infty \frac{x^n}{n!} = e^x.
 `
 
 For this section, the created HTML-code is
 ```
 1.1. Math</h3>
   <p>
-    This is an example of <em>inline math</em>: <code class="math inline">e^{\pi i} + 1 = 0</code>
+    This is an example of <em>inline math</em>: <code class="math inline">e^{\pi\cdot i} + 1 = 0</code>
     and this is <em>display math</em></p>
   <p>
-  <code class="math display">\Sum_{n=0}^\infty \frac{x^n}{n!} = e^x. </code>
+  <code class="math display">\sum_{n=0}^\infty \frac{x^n}{n!} = e^x. </code>
 </p>
 ```
 
