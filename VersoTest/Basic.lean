@@ -18,15 +18,6 @@ $$`
   \sum_{n=0}^\infty \frac{x^n}{n!} = e^x.
 `
 
-For this section, the created HTML-code is
-```
-1.1. Math</h3>
-  <p>
-    This is an example of <em>inline math</em>: <code class="math inline">e^{\pi\cdot i} + 1 = 0</code>
-    and this is <em>display math</em></p>
-  <p>
-  <code class="math display">\sum_{n=0}^\infty \frac{x^n}{n!} = e^x. </code>
-</p>
-```
-
-The formulae are rendered as code and not as _math_.
+The formulae are rendered as _math_ as expected, because
+[Main.lean](https://github.com/runbikeswim/verso-test/blob/main/Main.lean)
+contains `config := config.addKaTeX`.

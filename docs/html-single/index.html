@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="-verso-search/search-box.css">
     <link rel="stylesheet" href="-verso-search/search-highlight.css">
     <link rel="stylesheet" href="-verso-search/domain-display.css">
+    <script src="-verso-data/katex/katex.js"></script>
+    <script src="-verso-data/katex/math.js"></script>
+    <link rel="stylesheet" href="-verso-data/katex/katex.css">
     <script src="-verso-search/search-highlight.js" defer="defer"></script>
     </head>
   <body>
@@ -77,16 +80,9 @@ The examples are based on the <a href="https://github.com/leanprover/verso/relea
   \sum_{n=0}^\infty \frac{x^n}{n!} = e^x.
 </code></p>
                 <p>
-                  For this section, the created HTML-code is</p>
-                <pre>1.1. Math&lt;/h3&gt;
-  &lt;p&gt;
-    This is an example of &lt;em&gt;inline math&lt;/em&gt;: &lt;code class="math inline"&gt;e^{\pi\cdot i} + 1 = 0&lt;/code&gt;
-    and this is &lt;em&gt;display math&lt;/em&gt;&lt;/p&gt;
-  &lt;p&gt;
-  &lt;code class="math display"&gt;\sum_{n=0}^\infty \frac{x^n}{n!} = e^x. &lt;/code&gt;
-&lt;/p&gt;
-</pre><p>
-                  The formulae are rendered as code and not as <em>math</em>.
+                  The formulae are rendered as <em>math</em> as expected, because
+<a href="https://github.com/runbikeswim/verso-test/blob/main/Main.lean">Main.lean</a>
+contains <code>config := config.addKaTeX</code>.
 </p>
                 </section>
               </section>

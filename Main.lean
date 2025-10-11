@@ -12,4 +12,4 @@ def config : Config where
   emitHtmlMulti := false
   htmlDepth := 1
 
-def main := manualMain (%doc VersoTest.Basic) (config := config)
+def main := manualMain (%doc VersoTest.Basic) (config := config.addKaTeX)
