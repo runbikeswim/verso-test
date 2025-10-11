@@ -10,3 +10,7 @@ lake exe verso-test
 ```
 
 This creates `index.html` und `docs/html-single`.
+
+## See the result
+
+That verso generated can be found [here](https://runbikeswim.github.io/verso-test/html-single/index.html) on GitHub pages.
