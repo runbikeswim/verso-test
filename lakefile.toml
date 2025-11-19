@@ -5,7 +5,7 @@ defaultTargets = ["verso-test"]
 [[require]]
 name = "verso"
 git = "https://github.com/leanprover/verso"
-rev = "v4.24.0-rc1"
+rev = "v4.25.1"
 
 [[lean_lib]]
 name = "VersoTest"
