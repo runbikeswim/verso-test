@@ -18,6 +18,16 @@ $$`
   \sum_{n=0}^\infty \frac{x^n}{n!} = e^x.
 `
 
-The formulae are rendered as _math_ as expected, because
+The formulae are *not* rendered as _math_ as expected, despite the fact that
 [Main.lean](https://github.com/runbikeswim/verso-test/blob/main/Main.lean)
-contains `config := config.addKaTeX`.
+contains
+```
+def config : Config where
+  destination := "docs"
+  emitTeX := false
+  emitHtmlSingle := true
+  emitHtmlMulti := false
+  htmlDepth := 1
+  features := HtmlFeatures.all
+```
+as replacement of the deprecated `config := config.addKaTeX`.

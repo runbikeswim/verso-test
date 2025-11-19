@@ -75,9 +75,18 @@ The examples are based on the <a href="https://github.com/leanprover/verso/relea
   \sum_{n=0}^\infty \frac{x^n}{n!} = e^x.
 </code></p>
                 <p>
-                  The formulae are rendered as <em>math</em> as expected, because
+                  The formulae are <strong>not</strong> rendered as <em>math</em> as expected, despite the fact that
 <a href="https://github.com/runbikeswim/verso-test/blob/main/Main.lean">Main.lean</a>
-contains <code>config := config.addKaTeX</code>.
+contains</p>
+                <pre>def config : Config where
+  destination := "docs"
+  emitTeX := false
+  emitHtmlSingle := true
+  emitHtmlMulti := false
+  htmlDepth := 1
+  features := HtmlFeatures.all
+</pre><p>
+                  as replacement of the deprecated <code>config := config.addKaTeX</code>.
 </p>
                 </section>
               </section>

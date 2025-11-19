@@ -11,7 +11,7 @@ def config : Config where
   emitHtmlSingle := true
   emitHtmlMulti := false
   htmlDepth := 1
-  features := .insert .KaTeX .empty
+  features := HtmlFeatures.all
 
 #eval config.features
 
