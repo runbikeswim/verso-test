@@ -13,4 +13,6 @@ def config : Config where
   htmlDepth := 1
   features := .insert .KaTeX .empty
 
+#eval config.features
+
 def main := manualMain (%doc VersoTest.Basic) (config := config)
