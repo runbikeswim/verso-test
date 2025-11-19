@@ -11,5 +11,6 @@ def config : Config where
   emitHtmlSingle := true
   emitHtmlMulti := false
   htmlDepth := 1
+  features := .insert .KaTeX .empty
 
-def main := manualMain (%doc VersoTest.Basic) (config := config.addKaTeX)
+def main := manualMain (%doc VersoTest.Basic) (config := config)
